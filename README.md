@@ -3,8 +3,9 @@
 > A parser for embedded annotations of functions and modules
 
 [![Build Status](https://travis-ci.org/rasshofer/anno.svg)](https://travis-ci.org/rasshofer/anno)
-[![Coverage Status](https://coveralls.io/repos/rasshofer/anno/badge.png)](https://coveralls.io/r/rasshofer/anno)
-[![Dependency Status](https://david-dm.org/rasshofer/anno.png)](https://david-dm.org/rasshofer/anno)
+[![Coverage Status](https://coveralls.io/repos/github/rasshofer/anno/badge.svg)](https://coveralls.io/github/rasshofer/anno)
+[![Dependency Status](https://david-dm.org/rasshofer/anno/status.svg)](https://david-dm.org/rasshofer/anno)
+[![Dependency Status](https://david-dm.org/rasshofer/anno/dev-status.svg)](https://david-dm.org/rasshofer/anno)
 
 Anno parses DocBlocks, ignores any regular comment, and returns an object containing the parsed annotations.
 
@@ -30,7 +31,7 @@ function doSomething () {
 ```js
 var anno = require('anno');
 var result = anno(fs.readFileSync('test.js', 'utf8'));
-console.log(result);
+  console.log(result);
 });
 ```
 
