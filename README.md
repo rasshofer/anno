@@ -62,6 +62,8 @@ var result = anno(fs.readFileSync('test.js', 'utf8'));
 
 ## Changelog
 
+* 0.0.2
+  * README fixes
 * 0.0.1
   * Initial version
 
