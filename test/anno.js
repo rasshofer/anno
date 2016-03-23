@@ -1,0 +1,32 @@
+var fs = require('fs');
+var path = require('path');
+var tap = require('tap');
+var anno = require('../anno');
+
+var result = anno(fs.readFileSync(path.resolve(__dirname, 'demo.js'), 'utf8'));
+
+tap.deepEqual(result.demo0, {});
+tap.equal(result.demo1.hello, 'world');
+tap.equal(result.demo1.valueless, true);
+tap.equal(result.demo2.hello, 'world');
+tap.equal(result.anonymous.hello, 'world');
+tap.equal(result.demo3.hello, 'world');
+tap.deepEqual(result.demo4.say, ['veni', 'vidi', 'vici']);
+tap.equal(result.demo5.hello, 'world');
+tap.equal(result.demo6.hello, 'world');
+tap.equal(result.demo7.hello, 'world');
+tap.equal(result.demo8.hello, 'world');
+tap.equal(result.demo9.hello, 'world');
+tap.equal(result.demo10.hello, 'world');
+tap.equal(result.demo11.hello, 'world');
+tap.equal(result.demo12.hello, 'world');
+tap.equal(result.demo13.hello, 'world');
+tap.equal(result.demo14.hello, 'world');
+tap.equal(result.demo15.hello, 'world');
+tap.equal(result.demo16.hello, 'world');
+tap.equal(result.demo17.hello, 'world');
+tap.equal(result.demo18.hello, undefined);
+tap.equal(result.demo18.hElLo, 'world');
+tap.equal(result.demo19.hello, undefined);
+tap.equal(result.demo20.hello, undefined);
+tap.equal(result.demo21.hello, undefined);

@@ -1,0 +1,31 @@
+{
+  "name": "anno",
+  "version": "0.0.1",
+  "description": "A parser for embedded annotations of functions and modules",
+  "author": {
+    "name": "Thomas Rasshofer",
+    "email": "hello@thomasrasshofer.com",
+    "url": "http://thomasrasshofer.com/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rasshofer/anno.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rasshofer/anno/issues"
+  },
+  "main": "anno.js",
+  "keywords": [
+    "anno",
+    "annotations"
+  ],
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "jshint": "^2.9.1",
+    "tap": "^5.7.0"
+  },
+  "scripts": {
+    "test": "jshint anno.js && eslint anno.js && tap test/anno.js --cov"
+  }
+}
